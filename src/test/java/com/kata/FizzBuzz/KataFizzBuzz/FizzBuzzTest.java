@@ -19,7 +19,7 @@ public class FizzBuzzTest {
        // GIVEN FOR THE TEST
        var fizzBuzz = new FizzBuzz();
        // WHEN
-        var sut = fizzBuzz.execute(3);
+        var sut = fizzBuzz.execute(3, 5);
         // THEM
         assertEquals("Fizz", sut);
     }
@@ -29,9 +29,19 @@ public class FizzBuzzTest {
         // GIVEN FOR THE TEST
         var fizzBuzz1 = new FizzBuzz();
         // WHEN
-        var sut = fizzBuzz1.execute(5);
+        var sut = fizzBuzz1.execute(5, 5);
         // THEM
         assertEquals("Buzz", sut);
+    }
+
+    @Test
+    void cuandoSeaMultiploPor3y5DevuelveBuzz() {
+        // GIVEN FOR THE TEST
+        var fizzBuzz2 = new FizzBuzz();
+        // WHEN
+        var sut = fizzBuzz2.execute(3,5);
+        // THEM
+        assertEquals("FizzBuzz", sut);
     }
 
 
